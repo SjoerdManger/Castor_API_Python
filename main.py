@@ -26,9 +26,9 @@ os.environ["NUMBER_OF_CALLS"] = ""
 # TODO: set path to server location
 # TODO: get Castor Study ID from CSV file, RDP export?
 
-input_file_path = "C:\\Users\\s.manger\\PycharmProjects\\CastorAPI\\input_files\\"
-input_file = "Test_Study_-_Castor_API_export_20230111.csv"
-study_id = "A7875A16-E56C-4F0B-BB92-5B18B4C72C46"
+input_file_path = "[USER_PATH]"
+input_file = "[IMPORT_FILE].csv"
+study_id = "[STUDY_ID]"
 invalid_characters = bytes('\\/+,.-";:()[]{}!@#$%^&*|?<>', 'utf-8')
 
 # call main function
