@@ -22,10 +22,6 @@ os.environ["TIME_INIT_ACCESS"] = now
 os.environ["NUMBER_OF_CALLS"] = ""
 
 # collect some info from user
-# TODO: ask for the kind of request, import report, import CRF data or request survey status? (based on import_data.php)
-# TODO: set path to server location
-# TODO: get Castor Study ID from CSV file, RDP export?
-
 input_file_path = "[USER_PATH]"
 input_file = "[IMPORT_FILE].csv"
 study_id = "[STUDY_ID]"
