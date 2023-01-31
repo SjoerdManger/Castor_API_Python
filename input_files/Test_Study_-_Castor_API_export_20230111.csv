@@ -1,0 +1,7 @@
+Participant Id;Participant Status;Site Abbreviation;Participant Creation Date;aantal_lymf;test_radio_button;test_dropdown;test_checkboxes#Option_1;test_checkboxes#Option_2;test_checkboxes#Option_3;checkbox_calculation;test_date;test_date_2;date_calculation;date_diff_calculation;test_year;test_time;test_calculation;test_slider;test_text;regex_calculator;test_text_multi;test_randominzation;test_grid_Row_1_Column_1;test_grid_Row_1_Column_2;test_grid_Row_2_Column_1;test_grid_Row_2_Column_2;test_date_time;test_number_date_number;test_number_date_date;abcdefghijklmnopqrstuvwxyz;test_calc_dep;test_number_calc
+test958;Not Set;TES;6-12-2022 13:38;15;4;3;1;1;1;1;27-10-2022;1-10-2022;The date is not on the first of the month;Difference in dates is: 0 years, 0 months, -26 days;1900;02:30;3-11-2022;2;abc;Invalid Code;abcdef;;;;;;;;;;;
+TES/014;Not Set;TES;11-1-2023 13:21;16;3;;1;0;1;1;1-7-2021;18-2-2022;Correct Date format;Difference in dates is: 0 years, 7 months, 232 days;1991;01:15;8-7-2021;4;abc;Invalid Code;abcmulti;;;;;;;;;;;
+test0045;Not Set;TES;6-12-2022 13:38;15;4;3;1;1;1;1;27-10-2022;1-10-2022;The date is not on the first of the month;Difference in dates is: 0 years, 0 months, -26 days;1900;02:30;3-11-2022;2;abc;Invalid Code;abcdef;;;;;;;;;15;;
+test0046;Not Set;TES;6-12-2022 13:39;;;;1;1;0;1;;;;;;;;;;;;;;;;;;;;;;
+test0047;Not Set;TES;6-12-2022 13:39;;;;1;0;0;;;;;;;;;;;;;;;;;;;;;;;
+test0048;Not Set;TES;6-12-2022 13:39;;;;1;0;0;;;;;;;;;;;;;;;;;;;;;;;
