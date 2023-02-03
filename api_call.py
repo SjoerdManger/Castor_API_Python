@@ -1,7 +1,6 @@
 import os
 import time
-import json
-import requests as req
+import requests as req  # version 2.28.1
 
 
 def perform_api_call(category, study_id, access_token, get_or_post, post_fields="null", return_value="null", session=None):
