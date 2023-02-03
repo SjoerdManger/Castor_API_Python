@@ -55,30 +55,9 @@ def perform_api_call(category, study_id, access_token, get_or_post, post_fields=
             response = req.post(url, headers=headers, json=post_fields)
 
     if response.status_code in [200, 201]:
-        new_list = []
-        if return_value == "get_fields" or return_value == "get_field_option_group":
-            # initialize page count, arrays and counter
-            json_response = json.loads(response.text)
-            page_count = json_response["page_count"]
-            new_list.append(json_response)  # append first page
-
-            if page_count > 1:
-                for i in range(page_count - 1):
-                    if return_value == "get_field_option_group":
-                        is_option_group_call = True
-                        api_url = "field?page=" + str(i + 2) + "&include=optiongroup"
-                        new_list.append(json.loads(perform_api_call(api_url, study_id, access_token, "GET")))
-                    else:
-                        api_url = "field?page=" + str(
-                            i + 2)  # append first page, followed by the second on the next line
-                        new_list.append(json_response)  # append first page, followed by the second on the next line
-                        new_list.append(json.loads(perform_api_call(api_url, study_id, access_token, "GET")))
-
         # return value
         if return_value == "export_data" or return_value == "export_structure":
             returned_value = response.text
-        elif return_value == "get_fields" or return_value == "get_option_groups" or is_option_group_call:
-            returned_value = new_list
         else:
             returned_value = response.content
     else:
